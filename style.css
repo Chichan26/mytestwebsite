@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #ededed;
+    height: 3800px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    background: #0062ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;  
+  }
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px; 
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #1c1c1c;
+}
+
+
+.home {
+    height: 100vh; 
+    background: url('bgcbois.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    overflow-y: auto;
+  }
+.home-content {
+    max-width: 1000px;
+    max-height: 6000px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+  
+}
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0062ff;
+    padding-bottom: 30px;
+    
+}
+.home-content p {
+    font-size: 20px;
+    font-weight: 500;
+    padding
+}
+
+
+
+.socials {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0062ff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0062ff;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.socials a:hover {
+    color: #1c1c1c;
+}
+.socials a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0062ff;
+    z-index: -1;
+    transition: .5s;
+}
+
+.socials a:hover::before {
+    width: 100%;
+}
+
+
+.about-heading {
+    position: absolute;
+    top: 1100px;
+    left: 0%;
+    transform: translateX(-50)
+    
+}
+.about-line h1 {
+    border: 20px solid #2e2d2d;
+    width: 100%;
+    background: #2e2d2d;
+    text-align: center;
+    font-weight: 1000;
+}
+.about-section {
+    position: absolute;
+    top: 1220px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: #2e2d2d;
+    width: 1500px;
+    padding: 0px;
+}
+.about-section h1 {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #c19a6b;
+    font-weight: 500;
+}
+.about-section ul {
+    font-size: 20px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+
+.about-whoami {
+    position: absolute;
+    top: 1500px;
+    left: 10%;
+    color: #1c1c1c;
+    border: 1px solid white;
+    background-color: #2e2d2d;
+    border-radius: 50px;
+    width: 1500px;
+    padding: 0px;
+}
+.about-whoami h1 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #c19a6b;
+    font-weight: 500;
+} 
+.about-whoami h2 {
+    font-size: 20px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 500;
+}
+.about-whoami h3 {
+    font-size: 20px;
+    padding-left: 50px;
+    color: white;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+
+.about-educ {
+    position: absolute;
+    top: 1780px;
+    left: 10%;
+    color: #1c1c1c;
+    border: 1px solid white;
+    background-color: #2e2d2d;
+    border-radius: 50px;
+    width: 1500px;
+    padding: 0px;
+}
+.about-educ h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    color: #c19a6b;
+    font-weight: 500;
+}
+.about-educ h2 {
+    font-size: 20px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 500;
+}
+.about-educ h3 {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+
+.about-goal {
+    position: absolute;
+    top: 2015px;
+    left: 10%;
+    color: #1c1c1c;
+    border: 1px solid white;
+    background-color: #2e2d2d;
+    border-radius: 50px;
+    width: 1500px;
+}
+.about-goal h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    color: #c19a6b;
+    font-weight: 500;
+}
+.about-goal h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+
+.about-skills {
+    position: absolute;
+    top: 2230px;
+    left: 10%;
+    color: #1c1c1c;
+    border: 1px solid white;
+    background-color: #2e2d2d;
+    border-radius: 50px;
+    width: 1500px;
+}
+.about-skills h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #c19a6b;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about-skills h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-left: 50px;
+}
+.about-skills ul {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+.about-skills h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-left: 50px;
+}
+
+.about-occupation {
+    position: absolute;
+    top: 2550px;
+    left: 10%;
+    color: #1c1c1c;
+    border: 1px solid white;
+    background-color: #2e2d2d;
+    border-radius: 50px;
+    width: 1500px;
+}
+.about-occupation h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #c19a6b;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about-occupation h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+
+.myworks-line {
+    position: absolute;
+    top: 2800px;
+    background-color: #2e2d2d;
+    width: 100%;
+    padding: 20px; 
+    left: 0%;
+}
+.myworks-line h1 {
+    text-align: center;
+    font-weight: 1000;
+}
+
+
+.worksimage {
+    position: absolute;
+    top: 3000px;
+    left: 10%;
+}
+.worksimage h1 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.contacts-line {
+    position: absolute;
+    top: 3500px;
+    border: 1px solid #2e2d2d;
+    width: 100%;
+    padding: 20px;
+    background-color: #2e2d2d;
+    left: 0%;
+}
+.contacts-line h1 {
+    text-align: center;
+    font-weight: 1000;
+}
+
+
+.contacts h1 {
+    position: absolute;
+    top: 3600px;
+    width: 20%;
+    left: 40%;
+    padding: 10px;
+    border: 1px solid white;
+    background: #2e2d2d;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 500;
+
+}
+.contacts h2 {
+    position: absolute;
+    top: 3670px;
+    width: 20%;
+    left: 40%;
+    padding: 10px;
+    border: 1px solid white;
+    background: #2e2d2d;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 500;
+
+}
+ 
